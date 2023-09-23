@@ -5,7 +5,7 @@ def make_list(html_content):
 
     courses = []
 
-    course_elements = soup.find_all('li', class_=['course_label_re_01',['course_label_re_02']])
+    course_elements = soup.find_all('li', class_=['course_label_re_01','course_label_re_02'])
     for course_element in course_elements:
         course = {}
         course['course_title'] = course_element.find('h3').get_text()
